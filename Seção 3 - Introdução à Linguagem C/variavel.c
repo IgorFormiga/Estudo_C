@@ -1,22 +1,22 @@
-// Aula sobre variáveis
+// Aula sobre variaveis
 #include <stdio.h>
-//stdio.h é uma biblioteca da linguagem c para se trabalhar com entradas e saidas
-// padrão, ou seja, a entrada padrão(teclado) e principal saida(monitor)
+//stdio.h ï¿½ uma biblioteca da linguagem c para se trabalhar com entradas e saidas
+// padrï¿½o, ou seja, a entrada padrï¿½o(teclado) e principal saida(monitor)
 
-// Variáveis são elementos que possuem um tipo de dado, nome e valor
-int main(){ // A chave delimita um bloco de código
-    //Declarando variáveis
+// Variï¿½veis sï¿½o elementos que possuem um tipo de dado, nome e valor
+int main(){ // A chave delimita um bloco de cï¿½digo
+    //Declarando variï¿½veis
     int idade; // inteiro
-    //Declarando variáveis e inicializando variáveis
+    //Declarando variï¿½veis e inicializando variï¿½veis
     //int idade = 0;
     printf("Qual e sua idade? \n"); //o ponto e virgula finaliza um comando
     fflush(stdout);
-    //Recebendo dados (scanf recebe dados da entrada padrão)
+    //Recebendo dados (scanf recebe dados da entrada padrï¿½o)
     scanf("%d", &idade);
 
-    printf("A sua idade é %d\n", idade);
-    // "%d": para especificar o tipo de váriavel dentro de uma funfção %<tipo>
+    printf("A sua idade ï¿½ %d\n", idade);
+    // "%d": para especificar o tipo de vï¿½riavel dentro de uma funfï¿½ï¿½o %<tipo>
     // d indica o inteiro
-    //&idade: é a variavel na qual o valor informado usuario vai ser armazenado
+    //&idade: ï¿½ a variavel na qual o valor informado usuario vai ser armazenado
     return 0;
 }

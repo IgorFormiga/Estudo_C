@@ -13,7 +13,7 @@ int main(){
 	printf("Digite seu nome: ");
 	fflush(stdout);
 	gets(nome);
-	printf("olá %s\n", nome);
+	printf("ola %s\n", nome);
 
 	//Vetores e caracteres:
 	char letras[26]; //0..25
