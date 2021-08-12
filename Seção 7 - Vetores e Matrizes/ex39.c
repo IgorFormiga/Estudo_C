@@ -7,13 +7,13 @@ int main(){
 	conhecido do que elementos na matriz, o restante do agregado deve ser inicializado implicitamente da mesma forma
 	que os objetos que têm duração de armazenamento estático.
 	 */
-	int n, vetor1[50] = {0}, vetor2[50] = {0}, nlinhas = 0, e = 1, copia = 0, s;
+	int n, vetor1[50] = {0}, vetor2[50] = {0}, nlinhas = 0, e = 1, copia = 0;
 
 	printf("Digite um número inteiro positivo: ");
 	fflush(stdout);
 	scanf("%d", &n);
 
-	vetor2[0] = 1;
+	//vetor2[0] = 1;
 	//printf("%d\n", vetor2[0]);
 
 	while(nlinhas < n){
@@ -23,15 +23,16 @@ int main(){
 				vetor1[0] = 1;
 				printf("%d ", vetor1[0]);
 			}else{
-				printf("%d", i);
-				vetor1[i] = (int)vetor2[i] + (int)vetor2[i+1];
+				//printf("%d", i);
+				vetor1[i] = (int)vetor2[i] + (int)vetor2[i-1];
 				printf("%d ", vetor1[i]);
 			}
 		}
 		printf(" \n");
 		// Atribuido o vetor 1 no vetor 2
+		copia = 0;
 		while(vetor1[copia] != 0){
-			vetor1[copia] = vetor2[copia];
+			vetor2[copia] = vetor1[copia];
 			vetor1[copia] = 0;
 			copia = copia + 1;
 		}
@@ -41,3 +42,20 @@ int main(){
 	}
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
